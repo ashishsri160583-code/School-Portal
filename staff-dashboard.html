@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Staff Dashboard | Rajan International Academy
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="../CSS/staff-dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="dashboard">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================= -->
+
+        <aside class="sidebar">
+
+
+            <!-- School Logo -->
+
+            <div class="sidebar-logo">
+
+                <i class="fa-solid fa-school"></i>
+
+                <span>
+                    Rajan International Academy
+                </span>
+
+            </div>
+
+
+            <!-- Staff Information -->
+
+            <div class="sidebar-user">
+
+                <div class="user-image">
+
+                    <i class="fa-solid fa-chalkboard-user"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3 id="sidebarUserName">
+                        Staff Name
+                    </h3>
+
+
+                    <span id="sidebarUserRole">
+                        Staff
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-menu">
+
+
+                <a
+                    href="#"
+                    class="active"
+                    data-section="dashboard"
+                >
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="profile"
+                >
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="classes"
+                >
+
+                    <i class="fa-solid fa-chalkboard"></i>
+
+                    <span>
+                        My Classes
+                    </span>
+
+                </a>
+
+
+                <a href="#" data-section="students">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <span>
+                        Students
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="attendance"
+                >
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Attendance
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="assignments"
+                >
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <span>
+                        Assignments
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="results"
+                >
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <span>
+                        Marks & Results
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="timetable"
+                >
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>
+                        Timetable
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="notices"
+                >
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                    <span>
+                        Notices
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    data-section="notifications"
+                >
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                </a>
+
+
+            </nav>
+
+
+            <!-- Logout -->
+
+            <div class="sidebar-bottom">
+
+                <a
+                    href="#"
+                    id="logoutBtn"
+                >
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================= -->
+
+        <main class="main-content">
+
+
+            <!-- Top Header -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <span>
+                        STAFF PORTAL
+                    </span>
+
+                    <h1>
+                        Welcome Back,
+                        <span id="headerUserName">
+                            Staff
+                        </span>
+                    </h1>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <button class="notification-btn">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <span class="notification-count">
+                            5
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 DASHBOARD SECTION
+            ========================= -->
+
+            <section
+                class="content-section active-section"
+                id="dashboard"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        OVERVIEW
+                    </span>
+
+                    <h2>
+                        Staff Dashboard
+                    </h2>
+
+                    <p>
+                        Manage your classes, students and academic activities.
+                    </p>
+
+                </div>
+
+
+                <!-- Dashboard content next lesson -->
+
+                <div class="staff-stats">
+
+                    <div class="staff-stat-card">
+
+                        <div class="staff-stat-icon">
+
+                            <i class="fa-solid fa-chalkboard"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                My Classes
+                            </span>
+
+                            <h3>
+                                3
+                            </h3>
+
+                            <small>
+                                Assigned Classes
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="staff-stat-card">
+
+                        <div class="staff-stat-icon">
+
+                            <i class="fa-solid fa-user-graduate"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Students
+                            </span>
+
+                            <h3>
+                                124
+                            </h3>
+
+                            <small>
+                                Total Students
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="staff-stat-card">
+
+                        <div class="staff-stat-icon">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Attendance
+                            </span>
+
+                            <h3>
+                                92%
+                            </h3>
+
+                            <small>
+                                This Month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="staff-stat-card">
+
+                        <div class="staff-stat-icon">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Assignments
+                            </span>
+
+                            <h3>
+                                8
+                            </h3>
+
+                            <small>
+                                Active Assignments
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Profile -->
+
+            <section
+                class="content-section"
+                id="profile"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        PROFILE
+                    </span>
+
+                    <h2>
+                        My Profile
+                    </h2>
+
+                    <p>
+                        View your personal and professional information.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Classes -->
+
+            <section
+                class="content-section"
+                id="classes"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        CLASSES
+                    </span>
+
+                    <h2>
+                        My Classes
+                    </h2>
+
+                    <p>
+                        View your assigned classes and subjects.
+                    </p>
+
+                </div>
+
+                <div class="classes-grid">
+
+
+                    <!-- Class 1 -->
+
+                    <div class="class-card">
+
+                        <div class="class-card-header">
+
+                            <div class="class-icon">
+
+                                <i class="fa-solid fa-chalkboard"></i>
+
+                            </div>
+
+                            <span class="class-status">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="class-card-body">
+
+                            <span class="class-label">
+                                CLASS
+                            </span>
+
+                            <h3>
+                                Class 8-A
+                            </h3>
+
+                            <p class="subject-name">
+
+                                <i class="fa-solid fa-book"></i>
+
+                                Mathematics
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="class-info">
+
+                            <div>
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                                <span>
+                                    42 Students
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-door-open"></i>
+
+                                <span>
+                                    Room 101
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="view-students-btn" data-class="8-A">
+
+                            View Students
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Class 2 -->
+
+                    <div class="class-card">
+
+                        <div class="class-card-header">
+
+                            <div class="class-icon">
+
+                                <i class="fa-solid fa-chalkboard"></i>
+
+                            </div>
+
+                            <span class="class-status">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="class-card-body">
+
+                            <span class="class-label">
+                                CLASS
+                            </span>
+
+                            <h3>
+                                Class 9-A
+                            </h3>
+
+                            <p class="subject-name">
+
+                                <i class="fa-solid fa-book"></i>
+
+                                Mathematics
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="class-info">
+
+                            <div>
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                                <span>
+                                    38 Students
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-door-open"></i>
+
+                                <span>
+                                    Room 202
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="view-students-btn" data-class="9-A">
+
+                            View Students
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Class 3 -->
+
+                    <div class="class-card">
+
+                        <div class="class-card-header">
+
+                            <div class="class-icon">
+
+                                <i class="fa-solid fa-chalkboard"></i>
+
+                            </div>
+
+                            <span class="class-status">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="class-card-body">
+
+                            <span class="class-label">
+                                CLASS
+                            </span>
+
+                            <h3>
+                                Class 10-A
+                            </h3>
+
+                            <p class="subject-name">
+
+                                <i class="fa-solid fa-book"></i>
+
+                                Mathematics
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="class-info">
+
+                            <div>
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                                <span>
+                                    44 Students
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-door-open"></i>
+
+                                <span>
+                                    Room 301
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="view-students-btn" data-class="10-A">
+
+                            View Students
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!-- Students -->
+
+            <!-- =========================
+                STUDENTS SECTION
+            ========================= -->
+
+            <section class="content-section" id="students">
+
+                <div class="page-heading">
+
+                    <span>
+                        STUDENTS
+                    </span>
+
+                    <h2 id="studentsHeading">
+                        My Students
+                    </h2>
+
+                    <p>
+                        View and manage students from your assigned classes.
+                    </p>
+
+                </div>
+
+
+                <!-- Students Toolbar -->
+
+                <div class="students-toolbar">
+
+                    <div class="student-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="studentSearch"
+                            placeholder="Search student by name..."
+                        >
+
+                    </div>
+
+                    <div class="class-filter">
+
+                        <select id="classFilter">
+
+                            <option value="all">
+                                All Classes
+                            </option>
+
+                            <option value="8-A">
+                                Class 8-A
+                            </option>
+
+                            <option value="9-A">
+                                Class 9-A
+                            </option>
+
+                            <option value="10-A">
+                                Class 10-A
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="students-count">
+
+                        <i class="fa-solid fa-user-graduate"></i>
+
+                        <span id="studentCount">
+                            0 Students
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Students Table -->
+
+                <div class="students-table-wrapper">
+
+                    <table class="students-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Roll No.
+                                </th>
+
+                                <th>
+                                    Student Name
+                                </th>
+
+                                <th>
+                                    Class
+                                </th>
+
+                                <th>
+                                    Gender
+                                </th>
+
+                                <th>
+                                    Attendance
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="studentsTableBody">
+
+                            <!-- JavaScript will add students here -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- No Students Message -->
+
+                <div
+                    class="no-students"
+                    id="noStudentsMessage"
+                >
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <h3>
+                        No Students Found
+                    </h3>
+
+                    <p>
+                        Try searching with a different name.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Attendance -->
+
+            <section
+                class="content-section"
+                id="attendance"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        ATTENDANCE
+                    </span>
+
+                    <h2>
+                        Student Attendance
+                    </h2>
+
+                    <p>
+                        Manage attendance for your assigned classes.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Assignments -->
+
+            <section
+                class="content-section"
+                id="assignments"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        ASSIGNMENTS
+                    </span>
+
+                    <h2>
+                        Assignments
+                    </h2>
+
+                    <p>
+                        Create and manage student assignments.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Results -->
+
+            <section
+                class="content-section"
+                id="results"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        RESULTS
+                    </span>
+
+                    <h2>
+                        Marks & Results
+                    </h2>
+
+                    <p>
+                        Manage student marks and academic performance.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Timetable -->
+
+            <section
+                class="content-section"
+                id="timetable"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        TIMETABLE
+                    </span>
+
+                    <h2>
+                        My Timetable
+                    </h2>
+
+                    <p>
+                        View your teaching schedule.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notices -->
+
+            <section
+                class="content-section"
+                id="notices"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        NOTICES
+                    </span>
+
+                    <h2>
+                        Notices
+                    </h2>
+
+                    <p>
+                        View important school announcements.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notifications -->
+
+            <section
+                class="content-section"
+                id="notifications"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        NOTIFICATIONS
+                    </span>
+
+                    <h2>
+                        Notifications
+                    </h2>
+
+                    <p>
+                        Stay updated with important information.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =========================
+        STUDENT DETAILS MODAL
+    ========================= -->
+
+    <div class="student-modal" id="studentModal">
+
+        <div class="student-modal-box">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="modal-student-header">
+
+                <div
+                    class="modal-student-avatar"
+                    id="modalStudentAvatar"
+                >
+                    A
+                </div>
+
+
+                <div>
+
+                    <h2 id="modalStudentName">
+
+                        Student Name
+
+                    </h2>
+
+
+                    <p id="modalStudentClass">
+
+                        Class
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="student-details-grid">
+
+                <div class="student-detail">
+
+                    <span>
+                        Roll Number
+                    </span>
+
+                    <strong id="modalStudentRoll">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="student-detail">
+
+                    <span>
+                        Gender
+                    </span>
+
+                    <strong id="modalStudentGender">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="student-detail">
+
+                    <span>
+                        Attendance
+                    </span>
+
+                    <strong id="modalStudentAttendance">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="student-detail">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong id="modalStudentStatus">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../JS/staff-dashboard.js"></script>
+
+
+</body>
+
+</html>

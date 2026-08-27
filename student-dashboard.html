@@ -1,0 +1,4606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- Dashboard CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/dashboard.css">
+</head>
+<body>
+    
+    <div class="dashboard">
+
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <i class="fa-solid fa-school"></i>
+
+                <span>
+                    Rajan International Academy
+                </span>
+            </div>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-image">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <div>
+                    <h3 id="sidebarUserName">
+                        Akshat Srivastav
+                    </h3>
+
+                    <span id="sidebarUserRole">
+                        Student
+                    </span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-menu">
+
+                <a href="#" class="active" data-section="dashboard">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+
+                <a href="#" data-section="profile">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+                </a>
+
+                <a href="#" data-section="subjects">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <span>
+                        My Subjects
+                    </span>
+                </a>
+
+                <a href="#" data-section="attendance">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <span>
+                        Attendance
+                    </span>
+                </a>
+
+                <a href="#" data-section="results">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <span>
+                        Results
+                    </span>
+                </a>
+
+                <a href="#" data-section="exam-timetable">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <span>
+                        Exam Timetable
+                    </span>
+                </a>
+
+                <a href="#" data-section="class-timetable">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>
+                        Class Timetable
+                    </span>
+                </a>
+
+                <a href="#" data-section="assignments">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <span>
+                        Assignments
+                    </span>
+                </a>
+
+
+                <a href="#" data-section="notifications">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>
+                        Notifications
+                    </span>
+                </a>
+
+                <a href="#" data-section="fees">
+
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    <span>
+                        Fees & Payments
+                    </span>
+                </a>
+
+                <a href="#" data-section="notices">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>
+                        Notices
+                    </span>
+                </a>
+
+                <a href="#" data-section="documents">
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                    <span>
+                        Documents
+                    </span>
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+
+            <div class="sidebar-bottom">
+
+                <a href="#" id="logoutBtn">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>
+                        Logout
+                    </span>
+                </a>
+            </div>
+        </aside>
+    
+    <!-- MAIN AREA -->
+
+        <main class="dashboard-main">
+
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button class="sidebar-toggle" id="sidebarToggle">
+
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+
+                        <h1>
+                            Student Dashboard
+                        </h1>
+
+                        <p>
+                            Welcome back, Akshat Srivastav!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <button class="header-icon">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                    </button>
+
+                    <div class="header-profile">
+
+                        <div class="header-avatar">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Akshat Srivastav
+                            </strong>
+
+                            <span>
+                                Class 3-A+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard content -->
+
+        <div class="dashboard-content">
+
+            <section class="content-section active-section" id="dashboard">
+                <section class="welcome-card">
+
+                    <div>
+
+                        <span>
+                            STUDENT PORTAL
+                        </span>
+
+                        <h2>
+                            Welcome Back, Akshat Srivastav!
+                        </h2>
+
+                        <p>
+                            Stay updated with your studies,
+                            attendance, results and upcoming exams.
+                        </p>
+                    </div>
+
+                    <div class="welcome-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                </section>
+
+                <section class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon attendance-icon">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Attendance
+                            </span>
+
+                            <h3>
+                                92%
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon subject-icon">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Subjects
+                            </span>
+
+                            <h3>
+                                6
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon exam-icon">
+
+                            <i class="fa-solid fa-file-pen"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Upcoming Exams
+                            </span>
+
+                            <h3>
+                                3
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon result-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Last Result
+                            </span>
+
+                            <h3>
+                                85%
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bottom Grid -->
+
+                <section class="dashboard-grid">
+
+                    <div class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <h2>
+                                Upcoming Exams
+                            </h2>
+
+                            <a href="#">
+                                View All
+                            </a>
+                        </div>
+
+                        <div class="exam-list">
+
+                            <div class="exam-item">
+
+                                <div class="exam-date">
+
+                                    <strong>
+                                        25
+                                    </strong>
+
+                                    <span>
+                                        AUG
+                                    </span>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Mathematics Test
+                                    </h3>
+
+                                    <p>
+                                        10:00 AM - 11:30 AM
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="exam-item">
+
+                                <div class="exam-date">
+
+                                    <strong>
+                                        28
+                                    </strong>
+
+                                    <span>
+                                        AUG
+                                    </span>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Science Test
+                                    </h3>
+
+                                    <p>
+                                        09:30AM - 11:00 AM
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="exam-item">
+
+                                <div class="exam-date">
+
+                                    <strong>
+                                        02
+                                    </strong>
+
+                                    <span>
+                                        SEP
+                                    </span>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        English Test
+                                    </h3>
+
+                                    <p>
+                                        10:00 AM - 11:30 AM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+
+                        <div class="card-heading">
+
+                            <h2>
+                                Recent Result
+                            </h2>
+
+                            <a href="#">
+                                View Result
+                            </a>
+                        </div>
+
+                        <div class="result-summary">
+
+                            <div class="result-circle">
+                                85%
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Excellent Performance!
+                                </h3>
+
+                                <p>
+                                    Your overall Performance
+                                    has improved.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="result-subjects">
+
+                            <div>
+                                <span>
+                                    Mathematics
+                                </span>
+
+                                <strong>
+                                    88%
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Science
+                                </span>
+
+                                <strong>
+                                    82%
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    English
+                                </span>
+
+                                <strong>
+                                    86%
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- Profile Section -->
+
+            <section class="content-section" id="profile">
+
+                <div class="page-heading">
+
+                    <span>STUDENT INFORMATION</span>
+
+                    <h2>My Profile</h2>
+
+                    <p>
+                        View your personal and academic information.
+                    </p>
+                </div>
+
+                <div class="profile-layout">
+
+                    <div class="profile-card">
+
+                        <div class="profile-avatar">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+
+                        <h2>Akshat Srivastav</h2>
+                        <p>Student</p>
+
+                        <div class="profile-class">
+                            <i class="fa-solid fa-school"></i>
+                            Class 3-A+
+                        </div>
+                    </div>
+
+                    <div class="profile-details-card">
+
+                        <h3>Personal Information</h3>
+
+                        <div class="profile-details-grid">
+
+                            <div class="profile-detail">
+
+                                <span>Student ID</span>
+
+                                <strong>STU-2026-001</strong>
+                            </div>
+
+                            <div class="profile-detail">
+
+                                <span>Class</span>
+                                <strong>3-A+</strong>
+                            </div>
+
+                            <div class="profile-detail">
+                                <span>date of Birth</span>
+                                <strong>27-Mar-2016</strong>
+                            </div>
+
+                            <div class="profile-detail">
+
+                                <span>Gender</span>
+                                <strong>Male</strong>
+
+                            </div>
+
+                            <div class="profile-detail">
+
+                                <span>Email</span>
+
+                                <strong>student@rajania.com</strong>
+                            </div>
+
+                            <div class="profile-detail">
+
+                                <span>Phone</span>
+                                <strong>+91 63544 69425</strong>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="academic-card">
+
+                    <h3>Academic Information</h3>
+
+                    <div class="academic-grid">
+
+                        <div>
+                            <span>Admission No.</span>
+                            <strong>ADM-2026-1025</strong>
+                        </div>
+
+                        <div>
+                            <span>Roll Number</span>
+                            <strong>9</strong>
+                        </div>
+
+                        <div>
+                            <span>Academic Year</span>
+                            <strong>2026-2027</strong>
+                        </div>
+
+                        <div>
+                            <span>Section</span>
+                            <strong>A+</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Subject Section -->
+
+            <section class="content-section" id="subjects">
+
+                <div class="page-heading">
+                    <span>ACADEMIC INFORMATION</span>
+                    <h2>My Subjects</h2>
+                    <p>
+                        View all subjects assigned to your class.
+                    </p>
+                </div>
+
+                <div class="subjects-grid">
+
+                    <div class="subject-card">
+
+                        <div class="subject-card-top">
+
+                            <div class="subject-icon mathematics">
+                                <i class="fa-solid fa-square-root-variable"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                MATH-101
+                            </span>
+                        </div>
+
+                        <h3>
+                            Mathematics
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mr. Alok Sharma
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                6 Classes
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                75%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill math-progress" style="width: 75%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Science -->
+
+                    <div class="subject-card">
+                        <div class="subject-card-top">
+                            <div class="subject-icon science">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                SCI-102
+                            </span>
+                        </div>
+
+                        <h3>
+                            Science
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mrs. Ankita Verma
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                5 Classes
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                68%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill science-progress" style="width: 68%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- English -->
+
+                    <div class="subject-card">
+                        <div class="subject-card-top">
+                            <div class="subject-icon english">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                ENG-103
+                            </span>
+                        </div>
+
+                        <h3>
+                            English
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mrs. Sunita Singh
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                5 Clases
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                82%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill english-progress" style="width: 82%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hindi -->
+
+                    <div class="subject-card">
+                        <div class="subject-card-top">
+                            <div class="subject-icon hindi">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                HIN-104
+                            </span>
+                        </div>
+
+                        <h3>
+                            Hindi
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mr. Rajesh Srivastava
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                4 Clases
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                70%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill hindi-progress" style="width: 70%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computer -->
+
+                    <div class="subject-card">
+                        <div class="subject-card-top">
+                            <div class="subject-icon computer">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                COMP-105
+                            </span>
+                        </div>
+
+                        <h3>
+                            Computer Science
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mr. Ashish Srivastav
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                4 Clases
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                88%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill computer-progress" style="width: 88%;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Science -->
+
+
+                    <div class="subject-card">
+                        <div class="subject-card-top">
+                            <div class="subject-icon social">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+
+                            <span class="subject-code">
+                                SST-106
+                            </span>
+                        </div>
+
+                        <h3>
+                            Social Science
+                        </h3>
+
+                        <p class="teacher-name">
+                            <i class="fa-solid fa-user"></i>
+                            Mrs. Amrita Srivastava
+                        </p>
+
+                        <div class="subject-info">
+                            <span>
+                                Classes per week
+                            </span>
+
+                            <strong>
+                                5 Clases
+                            </strong>
+                        </div>
+
+                        <div class="progress-heading">
+                            <span>
+                                Course Progress
+                            </span>
+
+                            <strong>
+                                72%
+                            </strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill social-progress" style="width: 72%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End of Subject Section -->
+
+            <!-- =========================
+                ATTENDANCE SECTION
+            ========================= -->
+
+            <section class="content-section" id="attendance">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>STUDENT ATTENDANCE</span>
+
+                    <h2>My Attendance</h2>
+
+                    <p>
+                        View your overall and subject-wise attendance details.
+                    </p>
+
+                </div>
+
+
+                <!-- Attendance Summary Cards -->
+
+                <div class="attendance-summary">
+
+
+                    <!-- Overall Attendance -->
+
+                    <div class="attendance-main-card">
+
+                        <div class="attendance-circle">
+
+                            <div class="attendance-percentage">
+                                92%
+                            </div>
+
+                        </div>
+
+                        <h3>Overall Attendance</h3>
+
+                        <p>
+                            Excellent! Keep maintaining your attendance.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Present -->
+
+                    <div class="attendance-stat present-stat">
+
+                        <div class="attendance-stat-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div>
+                            <span>Present Days</span>
+                            <strong>184</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Absent -->
+
+                    <div class="attendance-stat absent-stat">
+
+                        <div class="attendance-stat-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+
+                        <div>
+                            <span>Absent Days</span>
+                            <strong>12</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Late -->
+
+                    <div class="attendance-stat late-stat">
+
+                        <div class="attendance-stat-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <span>Late Days</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Subject Wise Attendance -->
+
+                <div class="subject-attendance-card">
+
+                    <div class="attendance-card-header">
+
+                        <div>
+
+                            <span>ACADEMIC RECORD</span>
+
+                            <h3>Subject-wise Attendance</h3>
+
+                        </div>
+
+                        <span class="attendance-year">
+                            Academic Year 2026-27
+                        </span>
+
+                    </div>
+
+
+                    <!-- Mathematics -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon math-attendance">
+                                <i class="fa-solid fa-square-root-variable"></i>
+                            </div>
+
+                            <span>Mathematics</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>95%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill math-fill"
+                                    style="width: 95%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Science -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon science-attendance">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+
+                            <span>Science</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>90%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill science-fill"
+                                    style="width: 90%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- English -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon english-attendance">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <span>English</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>94%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill english-fill"
+                                    style="width: 94%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hindi -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon hindi-attendance">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+
+                            <span>Hindi</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>88%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill hindi-fill"
+                                    style="width: 88%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Computer Science -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon computer-attendance">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+
+                            <span>Computer Science</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>98%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill computer-fill"
+                                    style="width: 98%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Social Science -->
+
+                    <div class="attendance-subject-row">
+
+                        <div class="attendance-subject-name">
+
+                            <div class="attendance-subject-icon social-attendance">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+
+                            <span>Social Science</span>
+
+                        </div>
+
+
+                        <div class="attendance-progress-area">
+
+                            <div class="attendance-progress-text">
+
+                                <span>Attendance</span>
+
+                                <strong>89%</strong>
+
+                            </div>
+
+                            <div class="attendance-progress-bar">
+
+                                <div
+                                    class="attendance-progress-fill social-fill"
+                                    style="width: 89%;">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- =========================
+                RESULTS SECTION
+            ========================= -->
+
+            <section class="content-section" id="results">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>ACADEMIC PERFORMANCE</span>
+
+                    <h2>My Results</h2>
+
+                    <p>
+                        View your examination results and academic performance.
+                    </p>
+
+                </div>
+
+
+                <!-- Exam Information -->
+
+                <div class="exam-info-card">
+
+                    <div class="exam-info-left">
+
+                        <div class="exam-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+
+                            <span>EXAMINATION</span>
+
+                            <h3>Annual Examination 2026</h3>
+
+                            <p>Class 10-A • Academic Year 2026-27</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-status">
+                        PASS
+                    </div>
+
+                </div>
+
+
+                <!-- Result Summary -->
+
+                <div class="result-summary-grid">
+
+
+                    <!-- Percentage -->
+
+                    <div class="result-summary-card">
+
+                        <div class="result-summary-icon percentage-icon">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Overall Percentage</span>
+
+                            <strong>86%</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Grade -->
+
+                    <div class="result-summary-card">
+
+                        <div class="result-summary-icon grade-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Overall Grade</span>
+
+                            <strong>A</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Total Marks -->
+
+                    <div class="result-summary-card">
+
+                        <div class="result-summary-icon marks-icon">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Total Marks</span>
+
+                            <strong>517 / 600</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rank -->
+
+                    <div class="result-summary-card">
+
+                        <div class="result-summary-icon rank-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Class Rank</span>
+
+                            <strong>5th</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Subject Wise Results -->
+
+                <div class="result-table-card">
+
+                    <div class="result-table-header">
+
+                        <div>
+
+                            <span>DETAILED RESULT</span>
+
+                            <h3>Subject-wise Performance</h3>
+
+                        </div>
+
+                        <button class="download-result-btn">
+
+                            <i class="fa-solid fa-download"></i>
+
+                            Download Result
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="result-table-wrapper">
+
+                        <table class="result-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Subject</th>
+
+                                    <th>Maximum Marks</th>
+
+                                    <th>Marks Obtained</th>
+
+                                    <th>Percentage</th>
+
+                                    <th>Grade</th>
+
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        Mathematics
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>88</td>
+
+                                    <td>88%</td>
+
+                                    <td>
+                                        <span class="grade-badge grade-a">
+                                            A
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Science
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>82</td>
+
+                                    <td>82%</td>
+
+                                    <td>
+                                        <span class="grade-badge grade-a">
+                                            A
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        English
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>90</td>
+
+                                    <td>90%</td>
+
+                                    <td>
+                                        <span class="grade-badge grade-a-plus">
+                                            A+
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Hindi
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>85</td>
+
+                                    <td>85%</td>
+
+                                    <td>
+                                        <span class="grade-badge grade-a">
+                                            A
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Computer Science
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>94</td>
+
+                                    <td>
+                                        94%
+                                    </td>
+
+                                    <td>
+                                        <span class="grade-badge grade-a-plus">
+                                            A+
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Social Science
+                                    </td>
+
+                                    <td>100</td>
+
+                                    <td>78</td>
+
+                                    <td>78%</td>
+
+                                    <td>
+                                        <span class="grade-badge grade-b-plus">
+                                            B+
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="status-badge pass">
+                                            Pass
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Performance Message -->
+
+                <div class="performance-card">
+
+                    <div class="performance-icon">
+
+                        <i class="fa-solid fa-medal"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>Excellent Performance!</h3>
+
+                        <p>
+                            You have performed very well in this examination.
+                            Keep working hard and maintain your excellent performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                EXAM TIMETABLE SECTION
+            ========================= -->
+
+            <section class="content-section" id="exam-timetable">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>EXAMINATION SCHEDULE</span>
+
+                    <h2>Exam Timetable</h2>
+
+                    <p>
+                        View your upcoming examination schedule.
+                    </p>
+
+                </div>
+
+
+                <!-- Important Notice -->
+
+                <div class="exam-notice">
+
+                    <div class="exam-notice-icon">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Important Examination Notice</h3>
+
+                        <p>
+                            Students are requested to reach the examination room
+                            at least 30 minutes before the examination begins.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Exam Timetable Card -->
+
+                <div class="exam-timetable-card">
+
+
+                    <!-- Card Header -->
+
+                    <div class="exam-timetable-header">
+
+                        <div>
+
+                            <span>UPCOMING EXAMINATIONS</span>
+
+                            <h3>Annual Examination 2026</h3>
+
+                        </div>
+
+
+                        <div class="exam-session">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                            September 2026
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Mathematics -->
+
+                    <div class="exam-row">
+
+                        <div class="exam-date">
+
+                            <strong>05</strong>
+
+                            <span>SEP</span>
+
+                            <small>MON</small>
+
+                        </div>
+
+
+                        <div class="exam-subject">
+
+                            <div class="exam-subject-icon mathematics">
+
+                                <i class="fa-solid fa-square-root-variable"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Mathematics</h4>
+
+                                <span>MATH-101</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <span>Exam Time</span>
+
+                                <strong>09:00 AM</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <div>
+
+                                <span>Duration</span>
+
+                                <strong>3 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <span>Exam Room</span>
+
+                                <strong>Room 12</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="exam-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                    <!-- Science -->
+
+                    <div class="exam-row">
+
+                        <div class="exam-date">
+
+                            <strong>08</strong>
+
+                            <span>SEP</span>
+
+                            <small>THU</small>
+
+                        </div>
+
+
+                        <div class="exam-subject">
+
+                            <div class="exam-subject-icon science">
+
+                                <i class="fa-solid fa-flask"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Science</h4>
+
+                                <span>SCI-102</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <span>Exam Time</span>
+
+                                <strong>09:00 AM</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <div>
+
+                                <span>Duration</span>
+
+                                <strong>3 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <span>Exam Room</span>
+
+                                <strong>Room 12</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="exam-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                    <!-- English -->
+
+                    <div class="exam-row">
+
+                        <div class="exam-date">
+
+                            <strong>12</strong>
+
+                            <span>SEP</span>
+
+                            <small>MON</small>
+
+                        </div>
+
+
+                        <div class="exam-subject">
+
+                            <div class="exam-subject-icon english">
+
+                                <i class="fa-solid fa-book-open"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>English</h4>
+
+                                <span>ENG-103</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <span>Exam Time</span>
+
+                                <strong>09:00 AM</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <div>
+
+                                <span>Duration</span>
+
+                                <strong>3 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <span>Exam Room</span>
+
+                                <strong>Room 15</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="exam-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                    <!-- Hindi -->
+
+                    <div class="exam-row">
+
+                        <div class="exam-date">
+
+                            <strong>15</strong>
+
+                            <span>SEP</span>
+
+                            <small>THU</small>
+
+                        </div>
+
+
+                        <div class="exam-subject">
+
+                            <div class="exam-subject-icon hindi">
+
+                                <i class="fa-solid fa-language"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Hindi</h4>
+
+                                <span>HIN-104</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <span>Exam Time</span>
+
+                                <strong>09:00 AM</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <div>
+
+                                <span>Duration</span>
+
+                                <strong>3 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <span>Exam Room</span>
+
+                                <strong>Room 15</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="exam-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                    <!-- Computer -->
+
+                    <div class="exam-row">
+
+                        <div class="exam-date">
+
+                            <strong>18</strong>
+
+                            <span>SEP</span>
+
+                            <small>SUN</small>
+
+                        </div>
+
+
+                        <div class="exam-subject">
+
+                            <div class="exam-subject-icon computer">
+
+                                <i class="fa-solid fa-computer"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Computer Science</h4>
+
+                                <span>COMP-105</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+
+                                <span>Exam Time</span>
+
+                                <strong>09:00 AM</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-hourglass-half"></i>
+
+                            <div>
+
+                                <span>Duration</span>
+
+                                <strong>2 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="exam-detail">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <span>Exam Room</span>
+
+                                <strong>Computer Lab</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="exam-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <!-- =========================
+                CLASS TIMETABLE SECTION
+            ========================= -->
+
+            <section class="content-section" id="class-timetable">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>WEEKLY CLASS SCHEDULE</span>
+
+                    <h2>Class Timetable</h2>
+
+                    <p>
+                        View your weekly class schedule and subject timings.
+                    </p>
+
+                </div>
+
+
+                <!-- Timetable Info -->
+
+                <div class="timetable-info">
+
+                    <div class="timetable-class-info">
+
+                        <div class="timetable-info-icon">
+
+                            <i class="fa-solid fa-school"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>CLASS</span>
+
+                            <h3>Class 3-A+</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timetable-session">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        Academic Session 2026-27
+
+                    </div>
+
+                </div>
+
+
+                <!-- Timetable Card -->
+
+                <div class="class-timetable-card">
+
+                    <div class="timetable-card-header">
+
+                        <div>
+
+                            <span>WEEKLY SCHEDULE</span>
+
+                            <h3>Class 3-A+ Timetable</h3>
+
+                        </div>
+
+
+                        <div class="timetable-legend">
+
+                            <span class="legend-item">
+
+                                <span class="legend-box subject-legend"></span>
+
+                                Subject
+
+                            </span>
+
+
+                            <span class="legend-item">
+
+                                <span class="legend-box break-legend"></span>
+
+                                Break
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Scroll Wrapper -->
+
+                    <div class="timetable-wrapper">
+
+                        <table class="class-timetable">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Time</th>
+
+                                    <th>Monday</th>
+
+                                    <th>Tuesday</th>
+
+                                    <th>Wednesday</th>
+
+                                    <th>Thursday</th>
+
+                                    <th>Friday</th>
+
+                                    <th>Saturday</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+
+                                <!-- Period 1 -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        08:00 - 08:45
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject math-subject">
+
+                                            <strong>Mathematics</strong>
+
+                                            <span>Mr. Sharma</span>
+
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject science-subject">
+
+                                            <strong>Science</strong>
+
+                                            <span>Mrs. Verma</span>
+
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject english-subject">
+
+                                            <strong>English</strong>
+
+                                            <span>Mrs. Singh</span>
+
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject hindi-subject">
+
+                                            <strong>Hindi</strong>
+
+                                            <span>Mr. Mishra</span>
+
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject computer-subject">
+
+                                            <strong>Computer</strong>
+
+                                            <span>Mr. Gupta</span>
+
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject social-subject">
+
+                                            <strong>Social Science</strong>
+
+                                            <span>Mrs. Kapoor</span>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Period 2 -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        08:45 - 09:30
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject english-subject">
+                                            <strong>English</strong>
+                                            <span>Mrs. Singh</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject math-subject">
+                                            <strong>Mathematics</strong>
+                                            <span>Mr. Sharma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject science-subject">
+                                            <strong>Science</strong>
+                                            <span>Mrs. Verma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject social-subject">
+                                            <strong>Social Science</strong>
+                                            <span>Mrs. Kapoor</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject hindi-subject">
+                                            <strong>Hindi</strong>
+                                            <span>Mr. Mishra</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject computer-subject">
+                                            <strong>Computer</strong>
+                                            <span>Mr. Gupta</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Period 3 -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        09:30 - 10:15
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject science-subject">
+                                            <strong>Science</strong>
+                                            <span>Mrs. Verma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject english-subject">
+                                            <strong>English</strong>
+                                            <span>Mrs. Singh</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject math-subject">
+                                            <strong>Mathematics</strong>
+                                            <span>Mr. Sharma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject computer-subject">
+                                            <strong>Computer</strong>
+                                            <span>Mr. Gupta</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject social-subject">
+                                            <strong>Social Science</strong>
+                                            <span>Mrs. Kapoor</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject hindi-subject">
+                                            <strong>Hindi</strong>
+                                            <span>Mr. Mishra</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Lunch Break -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        10:15 - 10:45
+                                    </td>
+
+
+                                    <td colspan="6">
+
+                                        <div class="break-cell">
+
+                                            <i class="fa-solid fa-utensils"></i>
+
+                                            Lunch Break
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Period 4 -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        10:45 - 11:30
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject computer-subject">
+                                            <strong>Computer</strong>
+                                            <span>Mr. Gupta</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject hindi-subject">
+                                            <strong>Hindi</strong>
+                                            <span>Mr. Mishra</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject social-subject">
+                                            <strong>Social Science</strong>
+                                            <span>Mrs. Kapoor</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject math-subject">
+                                            <strong>Mathematics</strong>
+                                            <span>Mr. Sharma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject science-subject">
+                                            <strong>Science</strong>
+                                            <span>Mrs. Verma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject english-subject">
+                                            <strong>English</strong>
+                                            <span>Mrs. Singh</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Period 5 -->
+
+                                <tr>
+
+                                    <td class="time-cell">
+                                        11:30 - 12:15
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject hindi-subject">
+                                            <strong>Hindi</strong>
+                                            <span>Mr. Mishra</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject computer-subject">
+                                            <strong>Computer</strong>
+                                            <span>Mr. Gupta</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject english-subject">
+                                            <strong>English</strong>
+                                            <span>Mrs. Singh</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject science-subject">
+                                            <strong>Science</strong>
+                                            <span>Mrs. Verma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject math-subject">
+                                            <strong>Mathematics</strong>
+                                            <span>Mr. Sharma</span>
+                                        </div>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="timetable-subject social-subject">
+                                            <strong>Social Science</strong>
+                                            <span>Mrs. Kapoor</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                ASSIGNMENTS SECTION
+            ========================= -->
+
+            <section class="content-section" id="assignments">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>ACADEMIC WORK</span>
+
+                    <h2>Assignments & Homework</h2>
+
+                    <p>
+                        View your pending and completed assignments.
+                    </p>
+
+                </div>
+
+
+                <!-- Assignment Summary -->
+
+                <div class="assignment-summary-grid">
+
+                    <!-- Total -->
+
+                    <div class="assignment-summary-card">
+
+                        <div class="assignment-summary-icon total-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <div>
+                            <span>Total Assignments</span>
+                            <strong>8</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pending -->
+
+                    <div class="assignment-summary-card">
+
+                        <div class="assignment-summary-icon pending-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <span>Pending</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Completed -->
+
+                    <div class="assignment-summary-card">
+
+                        <div class="assignment-summary-icon completed-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div>
+                            <span>Completed</span>
+                            <strong>3</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Overdue -->
+
+                    <div class="assignment-summary-card">
+
+                        <div class="assignment-summary-icon overdue-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+
+                        <div>
+                            <span>Overdue</span>
+                            <strong>1</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Assignment Main Card -->
+
+                <div class="assignment-main-card">
+
+
+                    <!-- Header -->
+
+                    <div class="assignment-header">
+
+                        <div>
+
+                            <span>MY ASSIGNMENTS</span>
+
+                            <h3>All Assignments</h3>
+
+                        </div>
+
+
+                        <!-- Filter Buttons -->
+
+                        <div class="assignment-filters">
+
+                            <button class="assignment-filter active" data-filter="all">
+                                All
+                            </button>
+
+                            <button class="assignment-filter" data-filter="pending">
+                                Pending
+                            </button>
+
+                            <button class="assignment-filter" data-filter="completed">
+                                Completed
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Assignment List -->
+
+                    <div class="assignment-list">
+
+
+                        <!-- Assignment 1 -->
+
+                        <div class="assignment-item pending">
+
+                            <div class="assignment-subject-icon math-icon">
+                                <i class="fa-solid fa-square-root-variable"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>Algebra Practice Worksheet</h4>
+
+                                        <span class="assignment-subject">
+                                            Mathematics
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority high">
+                                        High Priority
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Complete all questions from Chapter 5:
+                                    Algebraic Expressions.
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date">
+
+                                        <i class="fa-solid fa-calendar"></i>
+
+                                        Due: 28 August 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status pending-status">
+                                        Pending
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Assignment 2 -->
+
+                        <div class="assignment-item pending">
+
+                            <div class="assignment-subject-icon science-icon">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>Science Experiment Report</h4>
+
+                                        <span class="assignment-subject">
+                                            Science
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority medium">
+                                        Medium Priority
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Prepare a report on the laboratory experiment
+                                    conducted in class.
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date">
+
+                                        <i class="fa-solid fa-calendar"></i>
+
+                                        Due: 30 August 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status pending-status">
+                                        Pending
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Assignment 3 -->
+
+                        <div class="assignment-item completed">
+
+                            <div class="assignment-subject-icon english-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>Essay Writing</h4>
+
+                                        <span class="assignment-subject">
+                                            English
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority low">
+                                        Normal
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Write an essay on "Importance of Education".
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date">
+
+                                        <i class="fa-solid fa-circle-check"></i>
+
+                                        Submitted: 20 August 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status completed-status">
+                                        Completed
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Assignment 4 -->
+
+                        <div class="assignment-item pending">
+
+                            <div class="assignment-subject-icon computer-icon">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>HTML & CSS Project</h4>
+
+                                        <span class="assignment-subject">
+                                            Computer Science
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority high">
+                                        High Priority
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Create a responsive webpage using HTML and CSS.
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date">
+
+                                        <i class="fa-solid fa-calendar"></i>
+
+                                        Due: 02 September 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status pending-status">
+                                        Pending
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Assignment 5 -->
+
+                        <div class="assignment-item completed">
+
+                            <div class="assignment-subject-icon hindi-icon">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>Hindi कविता लेखन</h4>
+
+                                        <span class="assignment-subject">
+                                            Hindi
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority low">
+                                        Normal
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    अपनी पसंद के विषय पर एक कविता लिखिए।
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date">
+
+                                        <i class="fa-solid fa-circle-check"></i>
+
+                                        Submitted: 18 August 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status completed-status">
+                                        Completed
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Assignment 6 -->
+
+                        <div class="assignment-item overdue">
+
+                            <div class="assignment-subject-icon social-icon">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+
+
+                            <div class="assignment-content">
+
+                                <div class="assignment-title-row">
+
+                                    <div>
+
+                                        <h4>History Assignment</h4>
+
+                                        <span class="assignment-subject">
+                                            Social Science
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="priority high">
+                                        High Priority
+                                    </span>
+
+                                </div>
+
+
+                                <p>
+                                    Prepare notes on the Indian Freedom Movement.
+                                </p>
+
+
+                                <div class="assignment-footer">
+
+                                    <div class="assignment-date overdue-date">
+
+                                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                                        Due: 18 August 2026
+
+                                    </div>
+
+
+                                    <span class="assignment-status overdue-status">
+                                        Overdue
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                NOTIFICATIONS SECTION
+            ========================= -->
+
+            <section class="content-section" id="notifications">
+
+                <div class="page-heading">
+
+                    <span>STUDENT UPDATES</span>
+
+                    <h2>Notifications</h2>
+
+                    <p>
+                        Stay updated with the latest school announcements and important information.
+                    </p>
+
+                </div>
+
+
+                <!-- Notification Summary -->
+
+                <div class="notification-summary">
+
+                    <div class="notification-summary-left">
+
+                        <div class="notification-summary-icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <div>
+                            <span>YOU HAVE</span>
+
+                            <h3>
+                                <strong id="unreadCount">3</strong> Unread Notifications
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="mark-all-read-btn" id="markAllRead">
+
+                        <i class="fa-solid fa-check-double"></i>
+
+                        Mark All as Read
+
+                    </button>
+
+                </div>
+
+
+                <!-- Notification Main Card -->
+
+                <div class="notification-main-card">
+
+
+                    <!-- Header -->
+
+                    <div class="notification-header">
+
+                        <div>
+
+                            <span>RECENT UPDATES</span>
+
+                            <h3>All Notifications</h3>
+
+                        </div>
+
+
+                        <!-- Filters -->
+
+                        <div class="notification-filters">
+
+                            <button class="notification-filter active"
+                                    data-notification-filter="all">
+
+                                All
+
+                            </button>
+
+
+                            <button class="notification-filter"
+                                    data-notification-filter="unread">
+
+                                Unread
+
+                            </button>
+
+
+                            <button class="notification-filter"
+                                    data-notification-filter="read">
+
+                                Read
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notification List -->
+
+                    <div class="notification-list">
+
+
+                        <!-- Notification 1 -->
+
+                        <div class="notification-item unread">
+
+                            <div class="notification-type-icon exam-notification">
+
+                                <i class="fa-solid fa-file-pen"></i>
+
+                            </div>
+
+
+                            <div class="notification-content">
+
+                                <div class="notification-title-row">
+
+                                    <div>
+
+                                        <h4>Annual Examination Schedule Released</h4>
+
+                                        <span class="notification-time">
+                                            Today, 10:30 AM
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="unread-dot"></span>
+
+                                </div>
+
+
+                                <p>
+                                    The Annual Examination 2026 timetable has been released.
+                                    Please check your Exam Timetable section.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Notification 2 -->
+
+                        <div class="notification-item unread">
+
+                            <div class="notification-type-icon assignment-notification">
+
+                                <i class="fa-solid fa-book"></i>
+
+                            </div>
+
+
+                            <div class="notification-content">
+
+                                <div class="notification-title-row">
+
+                                    <div>
+
+                                        <h4>New Mathematics Assignment</h4>
+
+                                        <span class="notification-time">
+                                            Today, 09:15 AM
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="unread-dot"></span>
+
+                                </div>
+
+
+                                <p>
+                                    A new Mathematics assignment has been added.
+                                    Please complete it before the due date.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Notification 3 -->
+
+                        <div class="notification-item unread">
+
+                            <div class="notification-type-icon announcement-notification">
+
+                                <i class="fa-solid fa-bullhorn"></i>
+
+                            </div>
+
+
+                            <div class="notification-content">
+
+                                <div class="notification-title-row">
+
+                                    <div>
+
+                                        <h4>Annual Sports Day Announcement</h4>
+
+                                        <span class="notification-time">
+                                            Yesterday, 04:30 PM
+                                        </span>
+
+                                    </div>
+
+
+                                    <span class="unread-dot"></span>
+
+                                </div>
+
+
+                                <p>
+                                    Annual Sports Day will be organized next month.
+                                    Students interested in participating should contact their class teacher.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Notification 4 -->
+
+                        <div class="notification-item read">
+
+                            <div class="notification-type-icon holiday-notification">
+
+                                <i class="fa-solid fa-calendar-days"></i>
+
+                            </div>
+
+
+                            <div class="notification-content">
+
+                                <div class="notification-title-row">
+
+                                    <div>
+
+                                        <h4>School Holiday Notice</h4>
+
+                                        <span class="notification-time">
+                                            20 August 2026
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p>
+                                    The school will remain closed on the upcoming public holiday.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Notification 5 -->
+
+                        <div class="notification-item read">
+
+                            <div class="notification-type-icon result-notification">
+
+                                <i class="fa-solid fa-chart-column"></i>
+
+                            </div>
+
+
+                            <div class="notification-content">
+
+                                <div class="notification-title-row">
+
+                                    <div>
+
+                                        <h4>Previous Examination Result Available</h4>
+
+                                        <span class="notification-time">
+                                            18 August 2026
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p>
+                                    Your previous examination result has been published.
+                                    You can view it from the Results section.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                FEES & PAYMENTS SECTION
+            ========================= -->
+
+            <section class="content-section" id="fees">
+
+                <!-- Page Heading -->
+
+                <div class="page-heading">
+
+                    <span>FINANCIAL INFORMATION</span>
+
+                    <h2>Fees & Payments</h2>
+
+                    <p>
+                        View your fee details, payment status and transaction history.
+                    </p>
+
+                </div>
+
+
+                <!-- Fee Summary Cards -->
+
+                <div class="fee-summary-grid">
+
+
+                    <!-- Total Fees -->
+
+                    <div class="fee-summary-card">
+
+                        <div class="fee-summary-icon total-fee-icon">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Total Annual Fees</span>
+
+                            <strong>₹75,000</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Paid -->
+
+                    <div class="fee-summary-card">
+
+                        <div class="fee-summary-icon paid-fee-icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Total Paid</span>
+
+                            <strong>₹50,000</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pending -->
+
+                    <div class="fee-summary-card">
+
+                        <div class="fee-summary-icon pending-fee-icon">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Pending Amount</span>
+
+                            <strong>₹25,000</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Due Date -->
+
+                    <div class="fee-summary-card">
+
+                        <div class="fee-summary-icon due-fee-icon">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Next Due Date</span>
+
+                            <strong>10 Sep 2026</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Fee Status Card -->
+
+                <div class="fee-status-card">
+
+                    <div class="fee-status-header">
+
+                        <div>
+
+                            <span>FEE STATUS</span>
+
+                            <h3>Academic Session 2026-27</h3>
+
+                        </div>
+
+
+                        <span class="fee-status-badge">
+
+                            Partially Paid
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Progress -->
+
+                    <div class="fee-progress-info">
+
+                        <div class="fee-progress-label">
+
+                            <span>Payment Progress</span>
+
+                            <strong>67%</strong>
+
+                        </div>
+
+
+                        <div class="fee-progress-bar">
+
+                            <div class="fee-progress-fill"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Status Details -->
+
+                    <div class="fee-status-details">
+
+                        <div>
+
+                            <span>Total Fees</span>
+
+                            <strong>₹75,000</strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Paid Amount</span>
+
+                            <strong class="paid-text">₹50,000</strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Pending Amount</span>
+
+                            <strong class="pending-text">₹25,000</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Installment Section -->
+
+                <div class="fee-installment-card">
+
+                    <div class="fee-card-heading">
+
+                        <div>
+
+                            <span>PAYMENT SCHEDULE</span>
+
+                            <h3>Fee Installments</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="installment-list">
+
+
+                        <!-- Installment 1 -->
+
+                        <div class="installment-item">
+
+                            <div class="installment-number paid-installment">
+
+                                1
+
+                            </div>
+
+
+                            <div class="installment-content">
+
+                                <h4>First Installment</h4>
+
+                                <span>Due Date: 10 April 2026</span>
+
+                            </div>
+
+
+                            <div class="installment-amount">
+
+                                ₹25,000
+
+                            </div>
+
+
+                            <span class="payment-badge paid-badge">
+
+                                Paid
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Installment 2 -->
+
+                        <div class="installment-item">
+
+                            <div class="installment-number paid-installment">
+
+                                2
+
+                            </div>
+
+
+                            <div class="installment-content">
+
+                                <h4>Second Installment</h4>
+
+                                <span>Due Date: 10 July 2026</span>
+
+                            </div>
+
+
+                            <div class="installment-amount">
+
+                                ₹25,000
+
+                            </div>
+
+
+                            <span class="payment-badge paid-badge">
+
+                                Paid
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Installment 3 -->
+
+                        <div class="installment-item">
+
+                            <div class="installment-number pending-installment">
+
+                                3
+
+                            </div>
+
+
+                            <div class="installment-content">
+
+                                <h4>Third Installment</h4>
+
+                                <span>Due Date: 10 September 2026</span>
+
+                            </div>
+
+
+                            <div class="installment-amount">
+
+                                ₹25,000
+
+                            </div>
+
+
+                            <span class="payment-badge pending-badge">
+
+                                Pending
+
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Payment History -->
+
+                <div class="payment-history-card">
+
+                    <div class="fee-card-heading">
+
+                        <div>
+
+                            <span>TRANSACTION HISTORY</span>
+
+                            <h3>Payment History</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-table-wrapper">
+
+                        <table class="payment-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Transaction ID</th>
+
+                                    <th>Date</th>
+
+                                    <th>Description</th>
+
+                                    <th>Amount</th>
+
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>#TXN202604001</td>
+
+                                    <td>10 Apr 2026</td>
+
+                                    <td>First Fee Installment</td>
+
+                                    <td class="payment-amount">
+                                        ₹25,000
+                                    </td>
+
+                                    <td>
+
+                                        <span class="payment-badge paid-badge">
+
+                                            Paid
+
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#TXN202607015</td>
+
+                                    <td>10 Jul 2026</td>
+
+                                    <td>Second Fee Installment</td>
+
+                                    <td class="payment-amount">
+                                        ₹25,000
+                                    </td>
+
+                                    <td>
+
+                                        <span class="payment-badge paid-badge">
+
+                                            Paid
+
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                NOTICES SECTION
+            ========================= -->
+
+            <section class="content-section" id="notices">
+
+                <div class="page-heading">
+
+                    <span>SCHOOL INFORMATION</span>
+
+                    <h2>School Notices</h2>
+
+                    <p>
+                        Stay updated with important announcements and school notices.
+                    </p>
+
+                </div>
+
+
+                <!-- Notice Top Bar -->
+
+                <div class="notice-top-bar">
+
+                    <div class="notice-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="noticeSearch"
+                            placeholder="Search notices..."
+                        >
+
+                    </div>
+
+
+                    <div class="notice-filters">
+
+                        <button class="notice-filter active"
+                                data-notice-filter="all">
+
+                            All
+
+                        </button>
+
+
+                        <button class="notice-filter"
+                                data-notice-filter="exam">
+
+                            Exams
+
+                        </button>
+
+
+                        <button class="notice-filter"
+                                data-notice-filter="holiday">
+
+                            Holidays
+
+                        </button>
+
+
+                        <button class="notice-filter"
+                                data-notice-filter="general">
+
+                            General
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Notice List -->
+
+                <div class="notice-page-list">
+
+
+                    <!-- Notice 1 -->
+
+                    <div class="school-notice-item exam">
+
+                        <div class="school-notice-date">
+
+                            <strong>20</strong>
+
+                            <span>AUG</span>
+
+                        </div>
+
+
+                        <div class="school-notice-content">
+
+                            <div class="notice-title-row">
+
+                                <div>
+
+                                    <span class="notice-category exam-category">
+                                        Examination
+                                    </span>
+
+                                    <h3>
+                                        Annual Examination Schedule Released
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <p>
+                                The Annual Examination timetable for the academic
+                                session 2026-27 has been released. Students are advised
+                                to check the Exam Timetable section.
+                            </p>
+
+
+                            <button class="view-notice-btn">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notice 2 -->
+
+                    <div class="school-notice-item general">
+
+                        <div class="school-notice-date">
+
+                            <strong>18</strong>
+
+                            <span>AUG</span>
+
+                        </div>
+
+
+                        <div class="school-notice-content">
+
+                            <span class="notice-category general-category">
+                                General
+                            </span>
+
+                            <h3>
+                                Parent Teacher Meeting
+                            </h3>
+
+
+                            <p>
+                                A Parent Teacher Meeting will be organized to discuss
+                                student academic performance and overall development.
+                            </p>
+
+
+                            <button class="view-notice-btn">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notice 3 -->
+
+                    <div class="school-notice-item holiday">
+
+                        <div class="school-notice-date">
+
+                            <strong>15</strong>
+
+                            <span>AUG</span>
+
+                        </div>
+
+
+                        <div class="school-notice-content">
+
+                            <span class="notice-category holiday-category">
+                                Holiday
+                            </span>
+
+                            <h3>
+                                Independence Day Holiday
+                            </h3>
+
+
+                            <p>
+                                The school will remain closed on the occasion of
+                                Independence Day.
+                            </p>
+
+
+                            <button class="view-notice-btn">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notice 4 -->
+
+                    <div class="school-notice-item general">
+
+                        <div class="school-notice-date">
+
+                            <strong>10</strong>
+
+                            <span>AUG</span>
+
+                        </div>
+
+
+                        <div class="school-notice-content">
+
+                            <span class="notice-category general-category">
+                                General
+                            </span>
+
+                            <h3>
+                                Annual Sports Day Registration
+                            </h3>
+
+
+                            <p>
+                                Students interested in participating in Annual Sports Day
+                                should register their names with their class teacher.
+                            </p>
+
+
+                            <button class="view-notice-btn">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                DOCUMENTS SECTION
+            ========================= -->
+
+            <section class="content-section" id="documents">
+
+                <div class="page-heading">
+
+                    <span>STUDENT DOCUMENTS</span>
+
+                    <h2>My Documents</h2>
+
+                    <p>
+                        View and download your important academic and school documents.
+                    </p>
+
+                </div>
+
+
+                <!-- Documents Top Bar -->
+
+                <div class="document-top-bar">
+
+                    <div class="document-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="documentSearch"
+                            placeholder="Search documents..."
+                        >
+
+                    </div>
+
+
+                    <div class="document-filters">
+
+                        <button
+                            class="document-filter active"
+                            data-document-filter="all"
+                        >
+                            All
+                        </button>
+
+
+                        <button
+                            class="document-filter"
+                            data-document-filter="academic"
+                        >
+                            Academic
+                        </button>
+
+
+                        <button
+                            class="document-filter"
+                            data-document-filter="certificate"
+                        >
+                            Certificates
+                        </button>
+
+
+                        <button
+                            class="document-filter"
+                            data-document-filter="financial"
+                        >
+                            Financial
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Documents Grid -->
+
+                <div class="documents-grid">
+
+
+                    <!-- Student ID Card -->
+
+                    <div class="document-card academic">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon id-document">
+
+                                <i class="fa-solid fa-id-card"></i>
+
+                            </div>
+
+                            <span class="document-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Student ID Card
+                        </h3>
+
+                        <p>
+                            Your official school student identity card.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-calendar"></i>
+                                Updated: Aug 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button class="document-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+
+                            <button class="document-download-btn">
+
+                                <i class="fa-solid fa-download"></i>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Report Card -->
+
+                    <div class="document-card academic">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon report-document">
+
+                                <i class="fa-solid fa-file-lines"></i>
+
+                            </div>
+
+                            <span class="document-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Annual Report Card
+                        </h3>
+
+                        <p>
+                            Academic performance and examination result.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-calendar"></i>
+                                Updated: July 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button class="document-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+
+                            <button class="document-download-btn">
+
+                                <i class="fa-solid fa-download"></i>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bonafide Certificate -->
+
+                    <div class="document-card certificate">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon certificate-document">
+
+                                <i class="fa-solid fa-certificate"></i>
+
+                            </div>
+
+                            <span class="document-status pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Bonafide Certificate
+                        </h3>
+
+                        <p>
+                            Official certificate confirming your student status.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Request Required
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button class="document-request-btn">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Request Document
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Fee Receipt -->
+
+                    <div class="document-card financial">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon fee-document">
+
+                                <i class="fa-solid fa-receipt"></i>
+
+                            </div>
+
+                            <span class="document-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Fee Payment Receipt
+                        </h3>
+
+                        <p>
+                            Receipt for your latest school fee payment.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-calendar"></i>
+                                Payment: July 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button class="document-view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+
+                            <button class="document-download-btn">
+
+                                <i class="fa-solid fa-download"></i>
+
+                                Download
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Transfer Certificate -->
+
+                    <div class="document-card certificate">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon tc-document">
+
+                                <i class="fa-solid fa-file-signature"></i>
+
+                            </div>
+
+                            <span class="document-status unavailable">
+                                Not Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Transfer Certificate
+                        </h3>
+
+                        <p>
+                            Transfer certificate will be available when applicable.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-lock"></i>
+                                Not Requested
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button
+                                class="document-request-btn disabled"
+                                disabled
+                            >
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                Not Available
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Character Certificate -->
+
+                    <div class="document-card certificate">
+
+                        <div class="document-card-top">
+
+                            <div class="document-icon character-document">
+
+                                <i class="fa-solid fa-award"></i>
+
+                            </div>
+
+                            <span class="document-status pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Character Certificate
+                        </h3>
+
+                        <p>
+                            Official certificate regarding student conduct.
+                        </p>
+
+
+                        <div class="document-info">
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Request Required
+                            </span>
+
+                        </div>
+
+
+                        <div class="document-actions">
+
+                            <button class="document-request-btn">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Request Document
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+
+        </div>
+    </main>
+</div>
+
+
+    
+    
+    <script src="../JS/dashboard.js"></script>
+</body>
+</html>
